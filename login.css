@@ -1,0 +1,172 @@
+/* Reset + smooth transitions for everything */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+#navBar {
+  width: 100%;
+  height: 10vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+#navBar div {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+#navBar div h2,
+#navBar div h3 {
+  font-size: 1.2rem;
+}
+
+#navBar div:hover {
+  transform: translateY(-3px);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #ffd700;
+}
+
+#signIn,
+#Login {
+  border: 2px solid #ffd700;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#signIn:hover {
+  background: #ffd700;
+  color: #000;
+}
+
+#Login {
+  border: 2px solid #00ff99;
+}
+
+#Login:hover {
+  background: #00ff99;
+  color: #000;
+}
+
+/* Container with fade slide animation */
+#container {
+  width: 400px;
+  padding: 2rem;
+  margin: 5rem auto;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(60px);
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#login h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeIn 1s ease 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  opacity: 0;
+  animation: fadeIn 1s ease 0.8s forwards;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  opacity: 0;
+  animation: fadeIn 1s ease 1s forwards;
+}
+
+input:focus {
+  box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700 inset;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #ffd700;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #000;
+  margin-top: 1.5rem;
+  opacity: 0;
+  animation: fadeIn 1s ease 1.2s forwards;
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+/* Tagline fade up */
+#ltmw {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: #fff;
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 1s ease 1.5s forwards;
+}

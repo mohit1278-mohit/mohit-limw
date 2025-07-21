@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="js/main.js"></script>
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fadeInUp {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    .fadeInUp-delay {
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: 0.2s;
+    }
+    :root {
+      --primary: #0f172a;
+      --secondary: #1e293b;
+      --accent: #facc15; /* Yellow-400 */
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-[var(--primary)] via-[var(--secondary)] to-gray-900 text-white font-[Poppins] min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center py-6 px-12 backdrop-blur-md bg-black/30 sticky top-0 z-50">
+    <h1 class="text-2xl font-[Playfair_Display] text-[var(--accent)]">Learn It My Way</h1>
+    <div class="flex space-x-6 items-center">
+      <a href="index.html" class="hover:text-[var(--accent)] transition">Home</a>
+      <a href="about.html" class="hover:text-[var(--accent)] transition">About</a>
+      <a href="help.html" class="hover:text-[var(--accent)] transition">Help</a>
+      <a href="more.html" class="hover:text-[var(--accent)] transition">More</a>
+      <a href="signin.html" class="px-4 py-2 border border-[var(--accent)] rounded-full hover:bg-[var(--accent)] hover:text-black transition">Sign In</a>
+      <a href="login.html" class="px-4 py-2 border border-green-400 rounded-full hover:bg-green-400 hover:text-black transition">Login</a>
+    </div>
+  </nav>
+
+  <!-- About Content -->
+  <main class="flex-grow flex flex-col items-center justify-center px-4 text-center">
+    <h1 class="text-5xl md:text-6xl font-[Playfair_Display] mb-4 fadeInUp">About Us</h1>
+    <p class="max-w-xl text-gray-300 fadeInUp-delay">
+      We build premium learning experiences for students who want to master knowledge in a modern, stylish way. Join us and upgrade your learning journey.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500">
+    © 2025 Learn It My Way.
+  </footer>
+</body>
+</html>

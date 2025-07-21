@@ -1,0 +1,28 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.animate-fadeInUp.delay-200 {
+  animation-delay: 0.2s;
+}
+
+/* Body base */
+body {
+  font-family: 'Poppins', sans-serif;
+}

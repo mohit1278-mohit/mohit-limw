@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #001f3f;
+    color: white;
+}
+/* here starts the code for navbar */
+#navBar{
+    width: auto;
+    height: 10vh;
+    background-color: #121212e3;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+/* this is for home wala div */
+#Home{
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+}
+#Home:hover{
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+/* this is for yt wala div  */
+#yt{
+    width: 140px;
+    height: auto;
+}
+#yt:hover{
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+/* this is for more wala div */
+#more{
+    width: 90px;
+    height: auto;
+}
+#more:hover{
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+/* this os for aboutus wala div */
+#aboutUs{
+    width: 150px;
+    height: auto;
+}
+#aboutUs:hover{
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+/* this is for help wala div */
+#help{
+    width: 100px;
+    height: auto;
+}
+#help:hover{
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+/* this is for sign in wala div */
+#signIn{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 25px;
+    margin-left: 95vh;
+}
+#signIn:hover{
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: rgba(255, 0, 0, 0.8);
+    transition-duration: 0.5s;
+}
+/* this is for login wala div */
+#Login{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    border-radius: 25px;
+    margin-left: 9px;
+}
+#Login:hover{
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: rgba(0, 128, 0, 0.8);
+    transition-duration: 0.5s;
+}
+/* here ends the code of nav bar  */
+/* this is for all anchor tags */
+a{
+    text-decoration: none;
+    color: white;
+}

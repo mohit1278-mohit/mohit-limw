@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn It My Way</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+    h1, h2 { font-family: 'Playfair Display', serif; }
+    #snakeCanvas { position: fixed; top: 0; left: 0; z-index: -1; }
+  </style>
+</head>
+<body class="bg-black text-white overflow-hidden relative">
+
+  <!-- NAVBAR -->
+  <nav class="flex justify-between items-center px-8 py-6 bg-black bg-opacity-50 backdrop-blur-md sticky top-0 z-50">
+    <h1 class="text-3xl font-bold bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 bg-clip-text text-transparent">Learn It My Way</h1>
+    <div class="flex space-x-6">
+      <a href="index.html" class="hover:scale-105 transition-transform">Home</a>
+      <a href="https://www.youtube.com/@learnitmyway7527/videos" target="_blank" class="hover:scale-105 transition-transform">YouTube</a>
+      <a href="more.html" class="hover:scale-105 transition-transform">More</a>
+      <a href="aboutus.html" class="hover:scale-105 transition-transform">About Us</a>
+      <a href="help.html" class="hover:scale-105 transition-transform">Help</a>
+      <a href="signin.html" class="border-2 border-gradient-to-r from-red-500 via-yellow-500 to-green-500 rounded-full px-4 py-2 hover:scale-110 transition-transform">Sign In</a>
+      <a href="login.html" class="border-2 border-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-full px-4 py-2 hover:scale-110 transition-transform">Login</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex flex-col items-center justify-center min-h-screen text-center px-4">
+    <div class="flex flex-col items-center space-y-4">
+      <img src="https://yt3.googleusercontent.com/NTToD7wW3otLb-Xc3S374LQrisYiFvxKplaGuR8KJsFZLqvp8WelMoRNqXwb6MZiOzXHbO0ZXQ=s160-c-k-c0x00ffffff-no-rj"
+           alt="Learn It My Way"
+           class="w-48 h-48 rounded-full border-4 border-gradient-to-r from-red-500 via-yellow-500 to-green-500 object-cover">
+      <h1 class="text-6xl font-bold">Learn It My Way</h1>
+      <p class="italic text-gray-400">-- Ajay Nishad</p>
+    </div>
+
+    <div class="mt-16 flex flex-col space-y-4 items-center">
+      <h2 class="text-4xl font-bold">Physics Is ❤️</h2>
+      <a href="https://www.youtube.com/@learnitmyway7527/videos" target="_blank">
+        <button class="px-8 py-4 rounded-full border-2 border-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-lg font-bold hover:scale-110 transition-transform">
+          Start Learning
+        </button>
+      </a>
+    </div>
+  </main>
+
+  <!-- CANVAS FOR SNAKE -->
+  <canvas id="snakeCanvas"></canvas>
+
+  <!-- JS -->
+  <script src="main.js"></script>
+</body>
+</html>
